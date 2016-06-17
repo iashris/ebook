@@ -72,7 +72,7 @@ class TOC:
     
             level = root.replace(startpath, '').count(os.sep)
             header = '#' * (level+1) + ' '
-            print('{}{}/'.format(header, os.path.basename(root)))
+            print('\n{}{}/'.format(header, os.path.basename(root)))
             list_n = 0
             for f in files:
                 list_n += 1
